@@ -12,5 +12,26 @@ open `cd weightAPI/` to open folder
 ### activate vertual envoirment 
 `source /<venv_name>/bin/acitvate`
 
+###now install requirments.txt
+`pip3 install pillow pandas pytesseract 
+for opencv-python run this command `sudo apt-get install libgl1-mesa-glx`
+Now try to run
+`sudo apt-get install tesseract-ocr`
+
+
+
+
+## For Gunicorn 
+### Install Gunicorn 
+`pip3 install 
+### Reload systemd to apply the changes
+`sudo systemctl daemon-reload`
+
+### Start the service
+`sudo systemctl start tableAPI`
+
+### Enable the service to start on boot
+`sudo systemctl enable tableAPI`
+
 
 
