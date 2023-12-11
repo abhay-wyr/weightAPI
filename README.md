@@ -33,10 +33,11 @@ Now try to run
 ### Enable the service to start on boot
 `sudo systemctl enable tableAPI`
 
-`[Unit]__
-Description=Gunicorn instance for a table api__
-After=network.target__
-[Service]__
+`
+>[Unit]
+>Description=Gunicorn instance for a table api <br/>
+>After=network.target
+>[Service]__
 User=ubuntu__
 Group=www-data__
 WorkingDirectory=/home/ubuntu/tableAPI
