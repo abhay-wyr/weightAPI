@@ -34,12 +34,12 @@ Now try to run
 `sudo systemctl enable tableAPI`
 
 `
->[Unit]
->Description=Gunicorn instance for a table api <br/>
->After=network.target
->[Service]__
-User=ubuntu__
-Group=www-data__
+[Unit]
+Description=Gunicorn instance for a table api <br/>
+After=network.target
+[Service]
+User=ubuntu
+Group=www-data
 WorkingDirectory=/home/ubuntu/tableAPI
 ExecStart=/home/ubuntu/tableAPI/venv_tableAPI/bin/python /home/ubuntu/tableAPI/venv_tableAPI/bin/gunicorn -b 0.0.0.0:8000 app:app
 Restart=always
