@@ -33,12 +33,12 @@ Now try to run
 ### Enable the service to start on boot
 `sudo systemctl enable tableAPI`
 
-`[Unit]
-Description=Gunicorn instance for a table api
-After=network.target
-[Service]
-User=ubuntu
-Group=www-data
+`[Unit]__
+Description=Gunicorn instance for a table api__
+After=network.target__
+[Service]__
+User=ubuntu__
+Group=www-data__
 WorkingDirectory=/home/ubuntu/tableAPI
 ExecStart=/home/ubuntu/tableAPI/venv_tableAPI/bin/python /home/ubuntu/tableAPI/venv_tableAPI/bin/gunicorn -b 0.0.0.0:8000 app:app
 Restart=always
